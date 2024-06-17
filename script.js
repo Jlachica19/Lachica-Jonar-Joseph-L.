@@ -1,11 +1,12 @@
-// Optional JavaScript for additional interactivity
-
-// Example: Smooth scrolling
+// Optional JavaScript for smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        const target = document.querySelector(this.getAttribute('href'));
+
+        window.scrollTo({
+            top: target.offsetTop - 70,
             behavior: 'smooth'
         });
     });
