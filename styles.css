@@ -1,21 +1,33 @@
 /* Reset default margin and padding */
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --accent-color: #fff;
+    --background-color: #f0f0f0;
+    --border-radius: 10px;
 }
 
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0;
+    background-color: var(--background-color);
+    color: #333; /* Default text color */
 }
 
 /* Header styles */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     padding: 20px 0;
     text-align: center;
 }
@@ -42,7 +54,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: var(--accent-color);
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -76,7 +88,7 @@ h2 {
 .about-image {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     margin-right: 20px;
 }
 
@@ -91,14 +103,19 @@ h2 {
 }
 
 .skill {
-    width: 45%;
+    width: calc(50% - 20px);
     text-align: center;
     margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .skill img {
     max-width: 100px;
     height: auto;
+    margin-bottom: 10px;
 }
 
 .portfolio-item {
@@ -109,14 +126,18 @@ h2 {
 .portfolio-item img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     margin-bottom: 10px;
 }
 
 .contact-form {
-    width: 60%;
+    width: 100%;
     max-width: 600px;
     margin: 0 auto;
+    background-color: var(--accent-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -126,6 +147,7 @@ h2 {
 label {
     display: block;
     margin-bottom: 5px;
+    color: var(--primary-color);
 }
 
 input[type="text"],
@@ -141,21 +163,21 @@ textarea {
 button[type="submit"] {
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    background-color: #555;
+    background-color: var(--secondary-color);
 }
 
 /* Footer styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     text-align: center;
     padding: 10px 0;
     position: fixed;
