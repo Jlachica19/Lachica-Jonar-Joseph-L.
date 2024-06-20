@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My Personal Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>My Personal Information</h1>
+            <img src="images/header-image.jpg" alt="Header Image" class="header-image">
+            <h1>John Doe</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -21,164 +22,53 @@
         </div>
     </header>
 
-<section id="profile">
-   <div class="section__pic-container">
-        <h2>About Me</h2>
-        <img src="./assets/jonarjonar.jpg" alt="About Me Image" class="about-image">
-   </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Jonar Joseph Lachica</h1>
-        <p class="section__text__p2">A Spiring Software Engineer</p>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/about-me-image.jpg" alt="About Me" class="about-image">
+                <div class="about-text">
+                    <p>Hello! I'm John Doe, a passionate web developer based in New York. I enjoy creating dynamic and user-friendly websites.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  class="icon"
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Basic</p>
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill">
+                    <img src="images/html-icon.png" alt="HTML">
+                    <p>HTML</p>
                 </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Basic</p>
+                <div class="skill">
+                    <img src="images/css-icon.png" alt="CSS">
+                    <p>CSS</p>
                 </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>JAVA</h3>
-                  <p>Basic</p>
+                <div class="skill">
+                    <img src="images/js-icon.png" alt="JavaScript">
+                    <p>JavaScript</p>
                 </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
+                <div class="skill">
+                    <img src="images/react-icon.png" alt="React">
+                    <p>React</p>
                 </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  class="icon"
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-        alt=""
-      />
     </section>
 
     <section id="portfolio">
         <div class="container">
             <h2>Portfolio</h2>
             <div class="gallery">
-                <!-- Example portfolio items with images -->
                 <div class="portfolio-item">
-                    <img src="jonarjonar.jpg" alt="Project 1">
+                    <img src="images/project1.jpg" alt="Project 1">
                     <h3>Project 1</h3>
                     <p>Description of Project 1.</p>
                 </div>
                 <div class="portfolio-item">
-                    <img src="image2.jpg" alt="Project 2">
+                    <img src="images/project2.jpg" alt="Project 2">
                     <h3>Project 2</h3>
                     <p>Description of Project 2.</p>
                 </div>
@@ -209,7 +99,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 My Personal Website | Designed by Jonar Joseph Lachica</p>
+            <p>&copy; 2024 John Doe | Designed by John Doe</p>
         </div>
     </footer>
 
