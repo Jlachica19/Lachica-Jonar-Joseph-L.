@@ -53,6 +53,8 @@ section {
 }
 
 section h2 {
+    gap: 5rem;
+    height: 80vh;
     text-align: center;
     margin-bottom: 20px;
 }
