@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonar Joseph Lachica- Portfolio</title>
+    <title>My Personal Website</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-mH1l3C5CuJpK4T87Fh1stHR2B1sBqZc1k96/rdxLpIVmsyW5Ch0AP2bplV1KAlOk87g4GjZbLf/mEwE3y5h7Wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header id="header">
+    <header>
         <div class="container">
-            <h1>Jonar Joseph Lachica</h1>
-            <p>A student of ACLC College of Taytay</p>
+            <h1>My Personal Website</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -25,26 +24,37 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Welcome to my portfolio! I'm a passionate web developer with experience in front-end and back-end technologies.</p>
-            <p>Currently, I enjoy building responsive web applications using HTML, CSS, JavaScript, and frameworks like React.</p>
+            <p>Hello! I'm [Your Name], a [Your Profession/Role]. I enjoy [Your Hobbies/Interests].</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>UI/UX Design</li>
+            </ul>
         </div>
     </section>
 
     <section id="portfolio">
         <div class="container">
             <h2>Portfolio</h2>
-            <div class="portfolio-items">
+            <div class="gallery">
+                <!-- Example portfolio items with images -->
                 <div class="portfolio-item">
-                    <img src="project1.jpg" alt="Project 1">
+                    <img src="image1.jpg" alt="Project 1">
                     <h3>Project 1</h3>
                     <p>Description of Project 1.</p>
                 </div>
                 <div class="portfolio-item">
-                    <img src="project2.jpg" alt="Project 2">
+                    <img src="image2.jpg" alt="Project 2">
                     <h3>Project 2</h3>
                     <p>Description of Project 2.</p>
                 </div>
-                <!-- Add more portfolio items as needed -->
             </div>
         </div>
     </section>
@@ -52,13 +62,19 @@
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <form id="contact-form" method="post" action="send_email.php">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
                 <button type="submit">Send Message</button>
             </form>
         </div>
@@ -66,12 +82,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
+            <p>&copy; 2024 My Personal Website | Designed by [Your Name]</p>
         </div>
     </footer>
 
