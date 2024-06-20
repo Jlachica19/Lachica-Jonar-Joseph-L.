@@ -104,7 +104,6 @@ section h2 {
     padding: 10px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
 }
 
 .portfolio-item img {
@@ -114,10 +113,12 @@ section h2 {
 }
 
 .portfolio-item h3 {
-    margin-top: 10px;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .portfolio-item p {
+    text-align: center;
     color: #666;
 }
 
