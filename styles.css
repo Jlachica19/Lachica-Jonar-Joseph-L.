@@ -33,7 +33,7 @@ nav ul {
 }
 
 nav ul li {
-    display: center;
+    display: inline;
     margin-right: 20px;
 }
 
