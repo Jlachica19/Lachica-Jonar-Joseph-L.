@@ -1,13 +1,15 @@
-// Optional JavaScript for smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
+// JavaScript code can be added here for interactivity
+// Example: form submission handling
 
-        const target = document.querySelector(this.getAttribute('href'));
-
-        window.scrollTo({
-            top: target.offsetTop - 70,
-            behavior: 'smooth'
-        });
-    });
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    // Example: Handle form submission (you can add more validation or backend processing here)
+    let formData = new FormData(this);
+    let name = formData.get('name');
+    let email = formData.get('email');
+    let message = formData.get('message');
+    console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+    // Example: Show a success message or clear the form
+    alert('Message sent successfully!');
+    this.reset(); // Clear form fields
 });
